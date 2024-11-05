@@ -1,0 +1,69 @@
+Para usar códigos JS é presico usar {}
+
+onChange - é um evento que aciona uma função quando digitar um caracter no input
+<input type="text"
+  onChange={(event) => função(event.target.value(valor digitado))}
+/>
+
+.include(método JS) - determina se um conjunto de caracteres pode ser encontrado dentro de outra string,
+ retornando true ou false.
+exemplo:
+varString.includes(textoDigitado.toLowerCase())
+
+
+
+
+.MAP
+
+arrayPercorrido.map(itensArray) => {
+	return(
+		<componente/>
+)}
+
+ou
+
+arrayPercorrido.map(itensArray) => (
+	<componente key={itensArray.id ou index}/>
+)
+
+key - define um id para os componente (obrigado a usar com o map para diferenciar componenetes iguais)
+
+index - passa o índice de cada item do array
+
+exemplo:
+{jogosFiltrados.map((jogo) => (
+   <ItemJogos key={jogo.id} nome={jogo.nome} plataforma={jogo.plataforma}/>
+))}
+
+
+
+
+.FILTER
+const guardaResultado = arrayPercorrido.filter(itensArray) => {
+	return condição para o filtro(jogo.plataforma === 'nintendo')
+});
+
+ou
+
+const guardaResultado = arrayPercorrido.filter((itensArray) => 
+	condição para o filtro(jogo.plataforma === 'nintendo')
+);
+
+exemplo:
+const jogosFiltrados = jogosExclusivos.filter(
+    (jogo) => jogo.plataforma == 'xbox'
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
