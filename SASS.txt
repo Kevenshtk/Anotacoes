@@ -28,10 +28,12 @@ p b {}
 p:hover {}
 
 
+
+
 HERANÇA
 
 .btn{
-    &.btn-laranja{}: a classe .btn-laranja herda os atributos de classe .btn
+    &.btn-laranja{}: a classe .btn-laranja herda os atributos de classe .btn, usado também para aplicar pseudo-elemento e classe
 }
 
  ou
@@ -41,6 +43,8 @@ HERANÇA
 .btn-laranja{
     @extend .btn;
 }
+
+
 
 
 VARIÁVEIS E IMPORT

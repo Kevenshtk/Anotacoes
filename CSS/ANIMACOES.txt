@@ -1,0 +1,51 @@
+Biblioteca Animate.css
+
+INSTALAÇÃO
+
+NPM - npm install animate.css --save
+import 'animate.css';
+
+CDN
+Link - rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+
+
+USO
+animate__animated: Classe base que ativa a animação.
+
+animate__nomeAnimacao(animate__bounce): Classe que define o tipo de animação
+
+
+CLASSE DELAY
+animate__delay-2s até 5s;
+
+
+CLASSES DE DURAÇÃO
+nomeClass       velocidade padrão
+animate__slow	2s
+animate__slower	3s
+animate__fast	800ms
+animate__faster	500ms
+
+--animate-duration: 2s; personaliza a duração das animações
+
+
+CLASSE REPEAT
+animate__repeat-1
+animate__repeat-2
+animate__repeat-3
+animate__infinite
+
+animation-iteration-count: 3; propriedade para definir quantas vezes vai repetir 
+
+
+
+Ativando Animações com onClick
+
+function animarDiv() {
+  div.classList.add('animate__animated', 'animate__nomeAnimacao'); // Adiciona a animação
+
+  // Remove a animação ao final para que possa ser reativada
+  div.addEventListener('animationend', () => {
+    div.classList.remove("animate__nomeAnimacao");
+  });
+}
