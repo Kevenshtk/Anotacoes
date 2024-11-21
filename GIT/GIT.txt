@@ -1,0 +1,157 @@
+Configuração
+
+cat .git/config - acessa o file 
+
+faz o git associar o nome e email aos commits
+git config --global user.name <name>
+git config –global user.email <email>
+
+git help nomeComando - para ter um help de um comando especifico
+
+rm -rf .git - remove o arquivo .git
+
+
+.GITIGNORE
+
+.gitignore: faz o git iginorar tudo que está nesse arquivo
+ex.:
+para arquivos é só colocar a extensão do arquivo
+.class
+.java
+.exe
+
+para pasta é só colocar o nome da pasta
+
+
+
+
+git init - faz a pasta se tornar um repositório git
+Tem que ser feito com o terminal já na pasta do projeto
+
+git status - mostra o estado atual do repositório
+
+
+ADD
+git add nomeFile - adiciona o arquivo no stage(local onde o git monitorar esses arquivos e suas alterações)
+git add . - adiciona todos os arquivos novos ou modificados a partir do diretório atual
+
+
+
+
+REMOVER
+git rm nomeFile - indica para stageing area a remoção de um arquivo (quando excluo o arquivo manualmente do diretório)
+git rm nomeFile - remove o arquivo do diretório e do repositório Git (o file precisa estar no repositório)
+git rm --cached nomeFile - remove o arquivo do  repositório, não será mais monitorado pelo git, mas mantém o arquivo no diretório
+git rm -f nomeArquivo - remove o arquivo do repositório e do diretório
+
+
+RESTORE
+git restore --staged nomeFile - remove o arquivo da staging area
+
+
+CLEAN
+git clean -n - lista os arquivos que vão ser removido do (diretório) que não foram commitados
+git clean -f - remove os arquivos
+
+
+
+
+RENOMEAR / MOVER
+git mv nomeFile novoNomeFile - renomea um arquivo ditero pelo git que está na (stage área)
+git mv nomeFile manual(pra onde vai) / novoNomeFile(renomear) - move o arquivo e renomeia
+obs.: quando o nome do arquivo tiver espaço deve usar "nome do file" ou nome\ do\ file
+
+
+
+RESET - anotar o hash do ultimo commit não dar para B.O, se fazer outro commit após o comando todos os commits acima do ponteiro HEAD serão perdidos(desfaz os commits).
+
+git reset --soft identificadorCommit(hash do commit) - desloca o ponteiro HEAD para o commit indicado, mas deixa os files prontos na staged area
+git reset --mixed identificadorCommit(hash do commit) - faz a mesma coisa, mas não deixa os files prontos na staged area
+git reset --hard identificadorCommit(hash do commit) - desfaz o commit, remove as mudanças do staging area e descarta todas as alterações locais no diretório
+
+
+CHERRY-PICK
+git cherry-pick identificadorCommit - faz o merge do commit específico
+
+
+DIFF
+git diff - mostra todas as mudanças feitas nos arquivos do diretório de trabalho com os arquivos do repositório
+git diff nomeFile - mostra as mudanças apenas do arquivo nomeFile
+git diff --staged - mostra todas as mudanças feitas nos arquivos da staged área com os arquivos do repositório
+git diff nomeBranch..nomeBranch - compara branchs
+
+git show HEAD - mostra as alterações do ultimo commit
+
+
+COMMIT
+git commit -m "descricaoCommit"
+git commit nomeFile -m "" - faz o commit de um file especifico
+git commit -am "descricaoCommit" - joga as alterações na staged área e já commit
+git commit --amend - muda a mensagem do ultimo commit
+git commit --amend -m "descricaoCommit" - substitui o ultimo commit
+
+
+TAG
+git tag nomeTag(identificador) identificadorCommit(hash do commit) - cria um identificador para versões do software
+git tag nomeTag identificadorCommit -m "descrição" - cria a tag com uma descrição
+git tag -d nomeTag - remove a tag do commit
+git tag -n - mostra todas as tags e a descrição da tag
+
+
+LOG
+git log - mostra todos os commits do repositório
+git log --oneline - mostra os commits em linha
+git log --graph --oneline - mostra o ultimo commit de cada branch
+git log nomeBranch --oneline -3(qualquer num) - mostra os últimos 3 commit da branch
+git log nomeFile - mostra todos os commits do arquivo nomeFile
+git log --author="nomeAutor" - filtra os commits por autor
+git log --grep="palavra" - filtra os commits por uma palavra chave
+
+
+CHECKOUT
+git checkout --(brach atual) nomeFile - restaura uma versão do file a partir do ultimo commit(o arquivo não pode estar na staged)
+git checkout identificador_do_commit(hash do commit) --(brach atual) nomeFile - recupera um file do commit 
+
+git checkout -b nome_do_novo_branch - cria uma nova branch e já muda para ela
+git checkout nomeBranch - muda a branch para onde vai todas as mudanças
+git checkout master - volta para branch principal
+
+
+BRANCH
+git branch - lista todas as branchs do repositório
+git branch -r - lista as branchs remotas
+git branch nomeBranch - cria uma nova branch
+git branch --move / -m nomeBranch novoNome - renomea uma branch
+git branch -D nomeBranch - remove uma branch
+git branch -a - exibe todas as branchs locais e remotas
+
+
+MERGE
+git merge nomeBranchComAlteração - mescla as alterações do branch onde foi feito as alterações com o branch principal
+
+
+REBASE
+git rebase nomeBrach(main) - reposiciona o primeiro commit da branch atual no ultimo commit da outra branch(main)
+
+
+
+Comandos do GIT / GITHUB
+
+PUSH
+git push - envia todos os commits do repositório local para o repositório remoto
+git push -u origin(repositório remoto) minha-branch(local) - Além de enviar os commits, ele configura a branch local para rastrear automaticamente a branch remota.(quando a branch local ainda não tem uma branch remota correspondente.)
+git push origin :nomeBranch - remove uma branch remota
+git push origin nomeTag - envia a tag para o repositório
+git push origin --tags - envia todas as tags
+
+
+REMOTE
+git remote add origen url-do-repositório-remoto(HTTPS ou SSH) - adiciona um repositório remoto ao seu repositório Git local
+
+
+CLONE
+git clone caminho_para_o_repositório
+
+
+PULL
+git pull - baixa todo o conteúdo atualizado do repositório remoto para o repositório local

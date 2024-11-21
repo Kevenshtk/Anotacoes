@@ -1,0 +1,35 @@
+feat: Use quando adicionar uma nova funcionalidade ou recurso.
+Exemplo: "feat: adicionar formulário de contato na página principal"
+
+fix: Use para corrigir um bug ou comportamento inesperado.
+Exemplo: "fix: corrigir erro de validação do formulário"
+
+refactor: Use para reorganizar ou reescrever o código sem alterar sua funcionalidade.
+Exemplo: "refactor: simplificar lógica de autenticação"
+
+style: Use para mudanças de formatação de código ou estilo, que não afetam a lógica.
+Exemplo: "style: ajustar indentação e espaçamento"
+
+chore: Use para atualizações de tarefas de build, configurações de administrador, pacotes.
+Exemplos: "chore: atualizar dependências do projeto", "chore: adicionar um pacote no gitignore"
+
+docs: Use para adicionar ou atualizar documentação. (Não inclui alterações em código).
+Exemplo: "docs: atualizar README com instruções de instalação"
+
+test: Use quando são realizadas alterações em testes, seja criando, alterando ou excluindo testes unitários. (Não inclui alterações em código)
+Exemplo: "test: adicionar testes para o componente de login"
+
+perf: Use para melhorar o desempenho do código.
+Exemplo: "perf: otimizar função de busca"
+
+build: Use para mudanças que afetam o processo de build ou dependências externas.
+Exemplo: "build: configurar webpack para produção"
+
+ci: Use para mudanças em arquivos ou configurações de integração contínua (CI).
+Exemplo: "ci: corrigir script de deploy no GitHub Actions"
+
+remove: Usa para indicam a exclusão de arquivos, diretórios ou funcionalidades obsoletas ou não utilizadas.
+
+cleanup: são utilizados para remover código comentado, trechos desnecessários, visando aprimorar sua legibilidade e manutenibilidade, como 
+Ajustar nomes de variáveis, funções ou classes para seguir um padrão, sem modificar o comportamento do código..
+Exemplo: "cleanup: padronizar nomes de variáveis no módulo de usuários"

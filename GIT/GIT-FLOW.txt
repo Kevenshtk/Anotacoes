@@ -1,0 +1,38 @@
+Principais branches no Git Flow
+
+main (ou master): Contém o código de produção. Somente versões estáveis e lançáveis do projeto estão nesta branch.
+
+develop: Onde todas as novas funcionalidades são integradas antes de serem lançadas.
+
+feature: Usada para desenvolver novas funcionalidades. Cada funcionalidade geralmente tem sua própria branch criada a partir de develop.
+
+release: Quando o projeto está pronto para uma nova versão, uma branch release é criada a partir de develop. É usada para preparar a versão, onde apenas ajustes finais e pequenas correções são feitas.
+
+hotfix: Criada a partir da main para correções de bugs em produção.
+
+
+
+Fluxo do Git Flow
+
+*Desenvolvimento de uma nova funcionalidade:
+
+Crie uma branch feature a partir de develop. Ex.: feature/nova-funcionalidade
+
+Depois de finalizar a funcionalidade, mescle a branch feature de volta em develop.
+
+*Preparação para um lançamento:
+
+Quando estiver pronto para lançar uma nova versão, crie uma branch release a partir de develop.
+
+Resolva quaisquer ajustes finais na branch release. Em seguida, mescle-a em main e em develop e crie uma tag para a nova versão.
+
+*Correções rápidas em produção:
+
+Se um bug crítico for encontrado em produção, crie uma branch hotfix a partir de main para corrigir o problema.
+
+Após corrigir o bug, mescle a branch hotfix de volta em main e em develop para manter o código atualizado.
+
+
+
+Comandos
+
