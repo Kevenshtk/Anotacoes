@@ -1,5 +1,5 @@
 # Anotações
-Este repositório é destinado a todas as minhas anotações:
+Este repositório é destinado a todas as minhas anotações sobre:
 
 - **HTML(HyperText Markup Language):**
 
@@ -26,3 +26,7 @@ Este repositório é destinado a todas as minhas anotações:
 - **GIT:**
 
     É um sistema de controle de versão distribuído usado para gerenciar e acompanhar as mudanças no código de projetos. Ele permite que vários desenvolvedores colaborem em um projeto simultaneamente, mantendo um histórico de todas as alterações feitas.
+
+- **SOLID:**
+
+    É um conjunto de cinco princípios de design de software que ajudam a criar sistemas mais organizados, flexíveis e fáceis de manter. Ele foi proposto por Robert C. Martin e se aplica principalmente à programação orientada a objetos.

@@ -1,0 +1,21 @@
+1. Single Responsibility Principle (Princípio da Responsabilidade Única): Cada classe deve ter apenas uma responsabilidade, ou seja, cada classe deve realizar apenas uma tarefa.
+
+
+2. Open/Closed Principle (Princípio Aberto/Fechado): O código deve estar aberto para extensão, mas fechado para modificação, inserindo novas funcionalidades sem modificar o código existente.
+
+Ex.: Classe Forma e subclasses Circulo e Retângulo, para adicionar um método de calcular a área, o ideal é criar uma interface Forma com o método nela, assim cada forma pode ter seu modo de calcular área e não ser preciso alterar o código do método, diferente se Forma fosse uma classe.
+
+
+3. Liskov Substitution Principle (Princípio da Substituição de Liskov): Subclasses devem poder substituir suas superClasse sem alterar o funcionamento do sistema.
+
+Ex.: Tenho na superclasse o método fazerCafe, todas as subclasses estão dependentes da superclasse. O ideal seria criar uma interface com o método fazerCafe, dai as subclasses não estariam dependentes da supeclasse.
+
+
+4. Interface Segregation Principle (Princípio da Segregação de Interfaces): Interfaces específicas são melhores que uma interface geral, ou seja, os clientes devem depender apenas dos métodos que realmente utilizam.
+
+Ex.: Tenho uma interface acoesPassaro, onde tenho os métodos de voar e nadar e duas classes Pinguim e Peixe, o ideal seria dividir em uma interface especifica para cada método, assim implementando apenas o método que a classe precisa.
+
+
+5. Dependency Inversion Principle (Princípio da Inversão de Dependências): Módulos de alto nível(superclasses) não dependam de módulos de baixo nível(subclasses), mas de abstrações (interfaces ou classes abstratas). 
+
+Ex.: Tenho uma classe OrdemServico que depende da classe EmailNotificacao, sendo que o ideal seria criar uma interface ServicoNotificacao para que quando ouver um novo meio de notificao a classe usar a interface.
