@@ -36,3 +36,48 @@ Após corrigir o bug, mescle a branch hotfix de volta em main e em develop para 
 
 Comandos
 
+git flow init - inicializar o fluxo no repositório
+
+
+FEATURE (Desenvolvimento de funcionalidades)
+
+git flow feature(prefixo) start nomeFeature - criar uma nova branch de funcionalidade
+git flow feature finish nomeFeature - Finaliza a branch de feature
+
+
+RELEASE (Preparação para lançamento)
+
+git flow release(prefixo) start versao - Criar uma branch de release
+git flow release finish versao - Finaliza a branch de release
+
+primeira tela: Esc -> wq! para salvar
+segunda tela(msg da tag)
+
+
+HOTFIX (Correções em produção)
+
+git flow hotfix(prefixo) start versao - Criar uma branch de hotfix
+git flow hotfix finish versao - Finaliza a branch de hotfix
+
+
+EXIBIR BRANCHS ATIVAS
+
+git flow feature
+git flow release
+git flow hotfix
+
+Mostra as branches existentes para cada tipo (feature, release, hotfix).
+
+
+PUBLISH
+
+git flow feature publish <nome-da-feature>
+git flow release publish versao
+git flow hotfix publish versao
+
+Envia a branch para o repositório remoto.
+
+
+PULL
+
+git flow feature pull remoto(origin) nomeFeature - Baixa uma branch do repositório remoto
