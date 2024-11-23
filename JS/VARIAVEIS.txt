@@ -24,6 +24,7 @@ console.log(nome);
 
 null é considerado 0 pelo JavaScript
 
+
 CONSTANTE
 
 const url = "https://www.devmedia.com.br/";

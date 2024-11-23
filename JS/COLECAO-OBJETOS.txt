@@ -17,6 +17,6 @@ var diciplina = colecao_disciplinas[1]; para acessar as informações dentro da 
 
 ACESSAR COLEÇÃO
 
-colecao_signos[0].nome
+let diciplina = colecao_disciplinas[0].nome; guarda o nome da primeira disciplina
 
-colecao_signos[0]["Nome"]
+let diciplina = colecao_disciplinas[1]; trás todas as informações da segunda disciplina

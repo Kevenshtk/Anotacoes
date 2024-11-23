@@ -61,7 +61,7 @@ OPTIONS
     second: 'numeric', // 1
     second: '2-digit', // 01,
 
-ex.:
+Ex.:
 const personalizandoData =  {
     weekday: 'long', // segunda-feira
     month: "2-digit", // 02

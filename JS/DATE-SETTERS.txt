@@ -26,4 +26,4 @@ dataAtual.setUTCMinutes(0);
 dataAtual.setUTCSeconds(59);
 dataAtual.setUTCMilliseconds(15);
 
-.setTime() - altera o timestamp(representa numeros de uma data UTC) da data
+.setTime() - altera o timestamp(é uma representação numérica de uma data UTC) da data

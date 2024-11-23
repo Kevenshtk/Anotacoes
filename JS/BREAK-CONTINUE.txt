@@ -13,6 +13,8 @@ while ( contador < funcionarios.length ) {
     contador++;
 }
 
+
+
 continue; é usado para interromper a iteração atual do loop e passa para a próxima
 
 ex.:
