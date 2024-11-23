@@ -7,4 +7,4 @@ var produto = {
     valor: 99.00
 };
 
-console.log(aula(nome_obj).id(dado)); para mostrar o valor do objeto
+console.log(produto(nome_obj).id(dado)); para mostrar o valor do objeto

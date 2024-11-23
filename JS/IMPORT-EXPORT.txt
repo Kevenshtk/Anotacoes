@@ -17,8 +17,10 @@ import {nomeFunção-1, nomeFunção-2} from 'localDoArquivo' (para importar mai
 
 
 REQUIRE
+
 forma mais antiga de importar e exporta módulos, ele não precisa
 do package.json para funcionar
+
 Ex.:
 EXPORTAR
 let colecao_signos[]

@@ -78,7 +78,7 @@ console.log(posicao); // 14
 
 
 
-split(","caracter usado para separar a string) serpara a variável em substrings menores
+split(","caracter usado para separar a string) separa a variável em substrings menores
 
 let cores_string = "vermelho,azul,branco,cinza,roxo";
 
