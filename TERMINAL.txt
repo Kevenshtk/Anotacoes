@@ -1,0 +1,83 @@
+Terminal
+
+LISTAR DIRETÓRIO
+
+ls: mostra o conteúdo do diretório
+
+ls -l: mostra mais detalhes do conteúdo
+
+ls -a: mostrar todo o conteúdo, inclusive arquivos que estão ocultos
+
+
+CRIAR DIRETÓRIO
+
+mkdir nomeDiretorio: criar um novo diretório
+
+
+NAVEGAR DIRETÓRIO
+
+cd nomeDiretorio
+
+Se digitar cd D e pressionar a tecla tab, o Terminal vai procurar algum diretório que comece com D
+
+cd ~: volta diretamente para home do usuário
+
+cd -: leva para o diretório anterior
+
+
+CRIAR ARQUIVO VAZIO
+
+touch nomeArquivo.txt
+
+ARQUIVO OCULTO
+Para criar arquivos ocultos, coloque o ´.´ antes do nome do arquivo
+
+touch .nomeArquivo.txt
+
+
+EDITAR ARQUIVO
+
+gedit(nomeEditor) despesas.txt(file)
+
+
+VISUALIZAR CONTEÚDO
+
+cat nomeArquivo.txt
+
+
+COPIAR ARQUIVO
+
+cp .nomeArquivo.txt(origial) .nomeArquivo.txt(cópia): copia no mesmo diretório
+
+cp .nomeArquivo.txt nomeDiretorio: para copiar um arquivo para um diretório.
+(o diretório precisa estar dentro do diretório de origem do arquivo)
+
+
+COPIAR DIRETÓRIO
+
+cp -r diretorio_original diretorio_destino.
+
+cp -r diretorio_original1 diretorio_original2 diretorio_destino.
+
+
+MOVER ARQUIVO/DIRETÓRIO
+
+também serve para renomear arquivos
+
+mv nomeArquivo.txt diretorioDestino
+
+mv nomeArquivo.txt nome_novo.txt
+
+
+REMOVER ARQUIVO
+
+rm nomeArquivo.txt
+
+rm*: remove todos os arquivos do diretório
+
+
+REMOVER DIRETÓRIO
+
+rmdir nomeDiretorio
+
+rm -r nomeDiretorio

@@ -1,0 +1,73 @@
+WEB
+
+alert('msg') mostra um alerta
+confirm('msg') mostra um alerta de confirma
+prompt('msg') trás um campo texto
+
+`\u{1F449}` para colocar emojis no js U+1F449(código normal)
+
+
+document.write(writeln)(`msg`) mostra a msg na tela
+
+var.focus() faz o cursor do campo voltar a piscar
+
+.createElement('tag') cria um elemento HTML pelo js
+.setAttribute('id,class, src'(tipo do atributo), 'nome/file'(valor))
+.appendChild(elemento) anexa algo a um elemento
+
+ex: var img = document.querySelector('#imagem')
+    var i = document.createElement('img')
+    i.setAttribute('src', 'img.jpg')
+    img.appendChild(i)
+
+ex(select): let i = document.createElement('option')
+        i.text = `Valor ${num.value} adicionado.`
+        lista.appendChild(i)
+
+ex: img.setAttribute('id', 'foto')
+
+var.src = 'local' insere imagens pelo js(com tag img no HTML)
+
+
+Converter váriaveis
+
+Number.parseInt(n)interio
+Number.parseFloat(n)real
+Number(n.value)o JS que idetifica real ou interio
+
+String(n)
+n.toString()
+`msg ${n}` template string(S� funciona com crase)
+
+
+Seletores
+.getElementsByTagName('')[0(PRI),1(SEG)(seleciona algo por tag)]
+
+.innerText  só o texto
+.innerHTML  o texto com as formatações
+
+.getElementById('')
+.getElementsByName('')
+.getElementsByClassName('')
+.querySelector('div#msg(CSS)') faz por elementos CSS
+
+
+click html
+onclick"nome()" quando clicar
+onmouseenter="" quando o mouse entra
+onmouseout="" quando o mouse sair
+
+click JS
+ a.addEventListener('click', clicar)
+ a.addEventListener('mouseenter', entrar)
+ a.addEventListener('mouseout', sair)
+
+carregar html
+onload"nome()" quando carregar o elemento html
+
+Estilo em JS
+var.style.textAlign = 'center'
+
+var.style.setProperty('propriedade', 'valor'); - aplica a propriedade css com o valor no elemento(var)
+
+var.setAttribute("value", "valor"); atribui um valor para um atributo html
