@@ -7,4 +7,5 @@ box-shadow :
 black(cor)
 inset cria sombra na frente do elemento
 
+ex.:
 text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26); sombra em textos

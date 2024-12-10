@@ -1,22 +1,28 @@
 @charset "UTF-8"; para ter compatibilidade com caracteres especiais
 
-UNIÃO DE ESTILOS
-div, p diz q vai ser estilizado as tags div e p
-div p diz q vai ser estilizado a tag p dentro da div
 
-*{  } para fazer configurações globais
+*{  } - para fazer configurações globais
+
+
+VÁRIAVEIS EM CSS
+:root serve para criar váriaveis{
+ --nomeVar: valor;
+}
 
 
 VISIBILITY
 visible padrão
 hidden oculta o elemento mas não remove o espaço do elemento da tela
 
+
 OPACITY
 opacity: 0% a 100%;
 
+
 BOX-SIZING
 altera a forma como o tamanho é calculado
-border-box faz o valor de padding e border ser incluídos no valor do width/height
+border-box - faz o valor de padding e border ser incluídos no valor do width/height
+
 ex.:
 div{
 height: 200px
@@ -28,14 +34,7 @@ altura total= 180px + 10px + 10px = 200px
 
 
 
-outline(width, style, color): é o espaço entre a borda e a margem
-
-
-
-VÁRIAVEIS EM CSS
-:root serve para criar váriaveis{
- --nome na var: valor;
-}
+outline(width, style, color) - é o espaço entre a borda e a margem
 
 
 list-style-type: '\2714(nome I)\00A0(espaço)'; colocar icones na colunas
