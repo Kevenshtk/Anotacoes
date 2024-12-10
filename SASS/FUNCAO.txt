@@ -1,0 +1,53 @@
+FUNÇÃO
+
+@function nomeFunção($parametro)
+nomeFunção() - para chamar a função
+
+ex.:
+@function text-color($size)
+    $color: #000
+
+    @if $size > 10
+        $color: red
+    @else 
+        $color: blue
+
+    @return $color
+
+color: text-color(5)
+
+
+* COM PARÂMETROS PRADRÃO - por padrão é um valor, mas ao chamar a função pode ser passado outro valor
+
+@function custom-border($variation: 1)
+    $border: none
+
+    @if $variation == 1
+        $border: 1px solid red
+    @else if $variation == 2
+        $border: 2px solid green
+    @else 
+        $border: 3px solid gold
+    
+    @return $border
+
+
+* COM PARÂMETROS POR NOME
+
+@function custom-width($width: 200px, $division: 2)
+    @return calc($width / $division)
+
+
+width: custom-width($width: 1000px)
+width: custom-width($division: 5)
+
+
+
+
+
+
+
+
+darken($background(cor), 10%(% de escuridão));
+
+desaturate($background, 50%); mexe na saturação da cor

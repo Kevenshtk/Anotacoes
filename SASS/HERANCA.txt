@@ -1,0 +1,77 @@
+HERANÇA
+
+* PARENT SELECTOR (&) - faz referencia ao seletor pai
+1) ex.:
+
+.btn
+    &.btn-laranja - a classe .btn-laranja herda os atributos de classe .btn.
+
+ ou
+
+.btn
+
+.btn-laranja
+    @extend .btn;
+
+
+2) ex.:
+
+.container
+    background: #ccc
+    padding: 20px
+    margin: 20px
+
+    &-contente = container-contente
+        color: yellow
+
+3) ex.:
+a
+    text-decoration: none
+    color: green
+    transition: .5s
+    padding: 10px
+    border: 1px solid green
+    display: block
+    width: 150px
+    text-align: center
+
+    &:hover = a:hover
+        background: green
+        color: White
+
+É o mesmo disso:
+
+a {
+  text-decoration: none;
+  color: green;
+  transition: 0.5s;
+  padding: 10px;
+  border: 1px solid green;
+  display: block;
+  width: 150px;
+  text-align: center;
+}
+a:hover {
+  background: green;
+  color: white;
+}
+
+
+
+* PLACEHOLDER SELECTOR - usado para entender o mesmo estilo para vários elementos
+ex.:
+
+%base-title-style
+    border-bottom: 2px dotted red
+    padding: 10px
+    background: yellow
+    text-align: center
+
+.title
+    font-size: 30px
+    @extend %base-title-style
+
+.sub-title
+    font-size: 25px
+    @extend %base-title-style
+

@@ -1,0 +1,51 @@
+NESTING
+ex.:
+div
+    background: #ddd
+
+    p
+        color: red
+
+* É o mesmo disso:
+
+div p {
+   color: red;
+}
+
+
+* LISTA - quando mais de um seletor recebe o mesmo estilo
+ex.:
+div, main
+    background: #ddd
+
+    p, h2
+        color: red
+
+É o mesmo disso:
+
+div, main {
+  background: #ddd;
+}
+div p, div h2, main p, main h2 {
+  color: red;
+}
+
+
+* COMBINATORS - ( ), (>), (+), (~)
+ex.:
+li
+    color: purple
+
+ol
+    > li
+        color: blue
+
+É o mesmo disso:
+
+li {
+  color: purple;
+}
+
+ol > li {
+  color: blue;
+}
