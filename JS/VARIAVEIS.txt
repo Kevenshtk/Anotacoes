@@ -38,3 +38,9 @@ null = 0
 undedfined = NaN
 
 parseInt(var/texto) converte de String para Number
+
+
+GUARDAR CONDIÇÕES
+const isNumeroPar = (numero % 2) == 0; - nesse tipo de variável o comum é usar is no começo do nome 
+
+if(numeroPar)

@@ -19,12 +19,13 @@ a ordem que elas estão no objeto
 let aluno(objeto) = { nome: "Marcos", email: "marcos@email.com", idade: 25 };
 
 for ( let dados(propriedade-obj) in aluno(objeto) ) {
-    console.log(aluno[dados(propriedade-obj)]);
+    console.log(aluno[dados]);
 }
 
 // Marcos
 // marcos@email.com
 // 25
+
 
 
 FOR OF

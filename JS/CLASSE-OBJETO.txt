@@ -1,0 +1,46 @@
+OBJETO LITERAL
+Usado quanto precisamos agrupar dados de um mesmo domínio
+
+ex.:
+var produto = {
+    id(chave): 9(valor),
+    nome: "Cafeteira Elétrica",
+    valor: 99.00
+    
+    // MÉTODO
+    descrever: function (){
+        console.log(`Meu nome é ${this.nome} e minha idade é ${this.valor}`);
+    }
+};
+
+produto.taxa = 10; - adiciona a chave taxa no objeto
+
+delete produto.taxa; - remove a chave taxa
+
+console.log(aula.id); - para mostrar o valor do id do objeto
+
+produto.descrever(); - chama o método
+
+
+
+
+
+
+
+
+
+class formaDeBolo{
+	constructor(saborDaMassa, saborRecheio){
+		this.saborDaMassa = saborDaMassa;
+		this.saborRecheio = saborRecheio;
+	}
+
+	toString(){
+		console.log(`Um bolo de ${this.saborDaMassa} com recheio de ${this.saborRecheio}`);
+	}
+}
+
+let boloFesta = new formaDeBolo("chocolate", "nutela");
+
+boloFesta.toString();
+
