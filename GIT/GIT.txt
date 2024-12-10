@@ -10,6 +10,10 @@ git help nomeComando - para ter um help de um comando especifico
 
 rm -rf .git - remove o arquivo .git
 
+git config init.defaultBranch - mostra o nome da branch padrão
+
+git --global config init.defaultBranch nomeBranch - para renomear a branch padrão
+
 
 .GITIGNORE
 
@@ -78,7 +82,7 @@ DIFF
 git diff - mostra todas as mudanças feitas nos arquivos do diretório de trabalho com os arquivos do repositório
 git diff nomeFile - mostra as mudanças apenas do arquivo nomeFile
 git diff --staged - mostra todas as mudanças feitas nos arquivos da staged área com os arquivos do repositório
-git diff nomeBranch..nomeBranch - compara branchs
+git diff nomeBranch(main)..nomeBranch(origin/main) - compara branchs
 
 git show HEAD - mostra as alterações do ultimo commit
 
@@ -146,12 +150,17 @@ git push origin --tags - envia todas as tags
 
 
 REMOTE
-git remote add origen url-do-repositório-remoto(HTTPS ou SSH) - adiciona um repositório remoto ao seu repositório Git local
+git remote add origin url-do-repositório-remoto(HTTPS ou SSH) - adiciona um repositório remoto ao seu repositório Git local
 
 
 CLONE
-git clone caminho_para_o_repositório
+git clone url
+git clone url --branch nomeBranch --single-branch - clona apenas a branch nomeBranch
 
 
 PULL
 git pull - baixa todo o conteúdo atualizado do repositório remoto para o repositório local
+
+
+FETCH
+git fetch - atualizar o repositório local com as informações do repositório remoto sem fazer o merge ou rebase.
