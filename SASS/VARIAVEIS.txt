@@ -1,0 +1,17 @@
+VARIÁVEIS
+$color-orange(nomeVar): Orange(atributo); - para criar uma variável
+
+
+shadowing - permite criar variáveis com o mesmo nome, desde que sejam de escopos diferentes
+ex:
+// escopo global
+$border: 2px solid red - todos os elementos recebem esse valor
+
+p
+//escopo local
+$border: 3px solid black - todos os elementos dentro de <p> recebem esse valor
+
+
+INTERPOLAÇÃO
+ex.:
+#{$nomeVar + 10px}
