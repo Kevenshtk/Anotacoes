@@ -1,4 +1,19 @@
 OVERFLOW
-overflow (scroll(exibe uma barra de rolagem), auto(só exibe uma barra de rolagem quando o tamanho é ultrapassado))cria uma barra de rolagem no elemento não deixando ele ultrapassar o tamanho
-overflow-x(horizontal) e -y(vertical) controla apenas uma barra de rolagem
+valores:
+visible(padrão) - define que o conteúdo não será cortado se passar o tamanho do elemento.
+
+hidden - O conteúdo que passar do limite será cortado e não ficará visível.
+
+scroll - O conteúdo excedido será cortado mas haverá uma barra de rolagem para permitir a visualização completa do mesmo.
+
+auto - A barra de rolagem será adicionada automaticamente se o conteúdo exceder o tamanho do elemento.
+
+inherit - Herda a propriedade do elemento pai.
+
+
+overflow-x(horizontal) e -y(vertical) - controla apenas uma barra de rolagem
+
 overflow: auto(-x) scroll(-y)
+
+ex.:
+overflow: scroll auto; - cria uma barra de rolagem no elemento não deixando ele ultrapassar o tamanho

@@ -1,0 +1,30 @@
+Combinador Descendente ( ) - Aplica estilo a todos os <p> que estão dentro de um <div>.
+
+ex.:
+div p {
+  color: red;
+}
+
+
+Combinador Filho (>) - Aplica estilo a todos os <p> que são filhos diretos de um <div>.
+
+ex.:
+div > p {
+  color: blue;
+}
+
+
+Combinador Adjacente (+) - Aplica estilo ao primeiro <p> que vem logo após um <h1>.
+
+ex.:
+h1 + p {
+  font-size: 14px;
+}
+
+
+Combinador de Irmãos Gerais (~) - Aplica estilo a todos os <p> que são irmãos posteriores de um <h1>.
+
+ex.:
+h1 ~ p {
+  color: green;
+}

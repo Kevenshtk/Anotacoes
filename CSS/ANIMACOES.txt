@@ -13,6 +13,8 @@ USO
 animate__animated: Classe base que ativa a animação.
 
 animate__nomeAnimacao(animate__bounce): Classe que define o tipo de animação
+Ex.:
+class="animate__animated animate__bounceIn"
 
 
 CLASSE DELAY

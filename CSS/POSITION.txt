@@ -1,9 +1,10 @@
 POSITION
-position: munda a posição de um elemento
+munda a posição de um elemento
 
-relative é como um mapa para o absolute usado no elemento pai
+relative - é como um mapa para o absolute usado no elemento pai
 
-absolute remove o elemento do fluxo normal do HTML, tem as bordas da página com referência
+absolute - remove o elemento do fluxo normal do HTML, tem as bordas da página com referência
+
 ex.:
 HTML
 <div class="container">
@@ -28,13 +29,30 @@ img {
     right: -25px;
 }
 
-fixed deixa o elemento fixo na tela
 
-sticky muda a posição dependendo rolagem
+fixed - deixa o elemento fixo na tela e remove ele do fluxo normal do html
+
+sticky - se move até o limite do elemento pai dependendo rolagem
 O.B.S.: O elemento tem q está com o position relative ou absolute
 
+ex:
+ header{
+   height: 200px;
+   border: 1px solid;
+  }
+
+  .topo{
+    height: 100px;
+    width: 100%;
+    background: red;
+            
+    position: sticky;
+    top: 1px;
+}
+
+
 MOVENDO ELEMENTOS
-top valor; não é usada junto com bottom
-right ; não é usada junto com left
+top valor; - não é usada junto com bottom
+right ; - não é usada junto com left
 bottom
 left

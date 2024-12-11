@@ -4,6 +4,7 @@ Pseudo-classes de estado: estiliza os mais variados estados dos elementos.
 :hover: quando passa o mouse em cima.
 :visited: quando o link já foi acessado.
 
+
 Pseudo-classes de estrutura: estiliza elementos com base em suas posição.
 
 OF-TYPE
@@ -14,6 +15,7 @@ OF-TYPE
 :nth-of-type(2(posição)ou odd(aplica o estilo a elementos impares), even(aplica o estilo a elementos pares))
 : estiliza o elemento na posição indicada especificado no seletor detro do elemento pai
 
+
 CHILD
 :first-child: estiliza o primeiro elemento filho detro do elemento pai.
 ex.: p:first-child vai estilizar todos os elemento p que são os primeiros detro do elemento pai.
@@ -23,6 +25,15 @@ ex.: p:first-child vai estilizar todos os elemento p que são os primeiros detro
 :nth-child(2(posição)ou odd(aplica o estilo a elementos impares), even(aplica o estilo a elementos pares))
 : estiliza o elemento na posição indicada especificado no seletor detro do elemento pai.
 exe.: p:nth-of-type(2) vai estilizar todos os p que são os segundos detro do elemento pai.
+
+
+
+
+
+
+
+
+
 
 PSEUDO-ELEMENTOS
 modifica partes de um elemento
