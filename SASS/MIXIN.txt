@@ -1,0 +1,46 @@
+MIXIN 
+Como se fosse uma função
+O.B.S.: o código do mixin tem que estar antes de ser chamado
+
+
+* SEM PARÂMETROS
+
+@mixin special
+    color: red
+    background-color: yellow
+    padding: 10px
+    border: 1px solid red
+
+    &:hover
+        border-color: blue
+        color: blue
+
+@include special
+
+
+
+* COM PARÂMETROS
+
+@mixin button-style(nome) ($background, $color)(argumentos) - mixin com parâmetros
+    background: $background
+    color: $color
+
+@include button-style(nomeMixin) ($color-orange, #fff)(argumentos); para chamar o mixin
+
+
+
+* COM PARÂMETROS OPCIONAIS
+
+@mixin border($style, $color, $width: 1px(opcional)) - o parâmetro opcional sempre tem que estar a direita dos obrigátorios
+    border: $width $style $color
+
+
+
+* COM PARÂMETROS POR NOME
+
+@mixin color($font: #000, $background: #fff)
+    color: $font
+    background-color: $background
+ 
+@include color($font(nomeParâmetro): gold(valor)) - no include é passado o nome do parâmetro e o valor
+@include color($background: black)

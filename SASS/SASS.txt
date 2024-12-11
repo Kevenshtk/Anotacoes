@@ -1,0 +1,32 @@
+TERMINAL
+
+npm install -g sass: para instalar o SASS
+
+sass --version / sass -v: para ver a versão do sass
+
+sass --watch style.scss(input):style.css(output): para compilar o arquivo sass
+
+sass --watch ./src/scss/style.scss:./src/css/style.css: quando estão em pastas diferentes
+
+sass --watch . compila todos os arquivo sass da pasta
+
+sass ./src/scss/style.scss(input):./src/css/style.mim.css(output) --style compressed: usado para deixar o arquivo css em uma linha
+
+
+DIFERENÇA ENTRE SASS x SCSS
+.sass - Sintaxe: Usa uma sintaxe simplificada, sem {} e ;
+
+.scss - É mais parecida com o CSS tradicional, utilizando {} para blocos e ; no final das declarações.
+
+
+COMENTÁRIOS
+// - tipo de comentário que não aparece no css
+/* - comentário multilinhas, vai ser incluso no css
+/*! - aparece até no modo de compressão
+#{var} - interpolação, forma de exibir valores dinâmicos em um comentário
+
+ex.: #{1 + 3} - no comentário ficaria 4
+
+
+PARTIALS - é criar arquivos sass específicos e usando import para uni-los. 
+

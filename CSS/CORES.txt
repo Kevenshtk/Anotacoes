@@ -1,31 +1,31 @@
 Cores primarias RGB
 Cores secundarias violeta, verde e laranja
-Cores terciarias est�o entre cores primarias e secundarias(amarelero-esverdeado)
+Cores terciarias estão entre cores primarias e secundarias(amarele-esverdeado)
 
 
-Temperatura de cores basta dividir o c�rculo no meio
-Cores frias: est�o do lado esquerdo do c�rculo
-Cores quentes: est�o do lado direito do c�rculo
+Temperatura de cores basta dividir o círculo no meio
+Cores frias: estão do lado esquerdo do círculo
+Cores quentes: estão do lado direito do círculo
 
 Cores complementares 
-S�o cores com maior contraste, s�o opostas no c�rculo(violeta e amarelo)
+São cores com maior contraste, s o opostas no círculo(violeta e amarelo)
 
-Cores an�logas
-s�o as 3 cores vizinhas da cor principal no c�rculo uma de cada lado
+Cores análogas
+são as 3 cores vizinhas da cor principal no círculo uma de cada lado
 
-Cores an�logas relacionadas
-s�o cores com menos contaste
+Cores análogas relacionadas
+são cores com menos contaste
 2 cores principais pula a terceira e junta com a do lado
 
 Cores intercaladas
-s�o cores com mais contraste
+são cores com mais contraste
 1 cor principal e vai pulando uma cor e pega a outra
 
-Cores tri�dicas
+Cores triádicas
 1 cor principal e pula 3 cores 
 
 Cores em quadrado
 1 cor principal e pula 2 cores
 
-Cores tetr�dicas
+Cores tetraédricas
 2 cor principal e os opostos das cores

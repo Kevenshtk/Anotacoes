@@ -1,13 +1,17 @@
 FONT
-font-size: 1em; define o tamanho da fonte
-font-weight(lighter, normal, bold, bolder) é o peso da fonte
+font-size: 1em; - define o tamanho da fonte
+font-weight(lighter, normal, bold, bolder) - é o peso da fonte
 font-style(italic)
+<<<<<<< HEAD
 text-decoration(underline, none) texto sublinhado/ não sublinhado
 text-transform: uppercase; deixa todas as letras maíusculas
 font-variant: small-caps; deixa todas as letras maíusculas e as primeiras letras maiores
 line-height: em; é o espaço entre linha
 letter-spacing: 5px; é o espaço entre as letras
 font: inherit; faz herdar a fonte do elemento pai
+=======
+font-variant: small-caps; - deixa todas as letras maiúsculas e as primeiras letras maiores
+>>>>>>> correcao
 
 Shorthand
 font(font-style-> font-weight-> font-size-> font-family(ordem))
@@ -19,7 +23,11 @@ font(font-style-> font-weight-> font-size-> font-family(ordem))
         }
 
 
-ALINHAMENTO
-text-align (center, left, right, justify); para alinha o texto
-text-indent: px; da um espaço na primeira linha do p
-vertical-align(top, middles, bottom) para alinha o texto em tabelas
+text-decoration(underline, none) - texto sublinhado/ não sublinhado
+text-transform: uppercase; - deixa todas as letras maiúsculas
+text-align (center, left, right, justify); - para alinha texto
+text-indent: px; - da um espaço na primeira linha do p (um tab)
+
+vertical-align(top, middles, bottom) - para alinha o texto em tabelas
+line-height: em; - é o espaço entre linha
+letter-spacing: 5px; - é o espaço entre as letras
