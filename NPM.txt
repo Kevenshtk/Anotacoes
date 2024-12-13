@@ -68,6 +68,8 @@ Run as administrator: executar o npm como administrador
 
 npm cache clean --force: limpar Cache do npm
 
+npm -v - mostra a versão
+
 npm install -g npm: Reinstalar npm
 
 npm install react-icons --save: para instalar uma biblioteca de ícones
