@@ -1,0 +1,53 @@
+EACH
+usada para iterar sobre listas ou mapas
+
+1) ex.:
+$colors: red, blue, green - lista
+
+@each $color(var) in $colors(lista) 
+    .text-#{$color}
+        color: $color
+
+Resultado css:
+.text-red {
+    color: red;
+}
+.text-blue {
+    color: blue;
+}
+.text-green {
+    color: green;
+}
+
+
+2) ex.:
+$colors: ( primary: #3498db, secondary: #2ecc71, danger: #e74c3c ) - mapa
+
+@each $name, $color in $colors
+    .bg-#{$name}
+        background-color: $color
+
+Resultado css:
+.bg-primary {
+    background-color: #3498db;
+}
+.bg-secondary {
+    background-color: #2ecc71;
+}
+.bg-danger {
+    background-color: #e74c3c;
+}
+
+
+FOR
+ex.:
+@for $i from 1 through 3 - conta de 1 a 3
+     .p-#{$i}
+        @if $i == 1
+            color: lightblue
+        @else if $i == 2
+            color: lightgreen
+        @else if $i == 3
+            color: teal
+        
+        background-color: black
