@@ -2,3 +2,5 @@ IMPORT
 @import "localFile"; - para importação
 
 OBS.: é uma boas prática criar os arquivos secundários com _(anderlinha) antes do nome, na hora de importar não precisa inserir o _ nem a extensão .sass
+
+@use - ?
