@@ -1,6 +1,22 @@
 IMPORT
-@import "localFile"; - para importação
+@import "nomeFile/localFile" - para importação
 
 OBS.: é uma boas prática criar os arquivos secundários com _(anderlinha) antes do nome, na hora de importar não precisa inserir o _ nem a extensão .sass
 
-@use - ?
+USE
+@use 'nomeFile/localFile'- maneira moderna e recomendada de importar arquivos
+
+@use 'nomeFile/localFile' as nomeApelido - da um apelido para prefixo
+
+@use 'nomeFile/localFile' as * - permite o não uso do prefixo
+
+1) ex.:
+@use 'variables'
+
+propriedadeCSS: variables(prefixo).$nomeVar
+
+
+2) ex.:
+@use 'variables' as *
+
+propriedadeCSS: $nomeVar

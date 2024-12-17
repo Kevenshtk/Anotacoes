@@ -44,3 +44,17 @@ O.B.S.: o código do mixin tem que estar antes de ser chamado
  
 @include color($font(nomeParâmetro): gold(valor)) - no include é passado o nome do parâmetro e o valor
 @include color($background: black)
+
+
+
+CONTENT
+@content - usado com mixins, permite que insira código CSS personalizado no ponto em que o mixin for chamado.
+
+ex.:
+@mixin mobile
+    @media (max-width: 425px)
+        @content
+
+
+@include utilities.mobile
+            código CSS
