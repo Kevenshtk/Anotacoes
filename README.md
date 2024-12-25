@@ -30,3 +30,7 @@ Este repositório é destinado a todas as minhas anotações sobre:
 - **SOLID:**
 
     É um conjunto de cinco princípios de design de software que ajudam a criar sistemas mais organizados, flexíveis e fáceis de manter. Ele foi proposto por Robert C. Martin e se aplica principalmente à programação orientada a objetos.
+
+- **NPM(Node Package Manager):**
+
+    É um gerenciador de pacotes para JavaScript, amplamente utilizado no desenvolvimento de software. Ele permite instalar, gerenciar e compartilhar bibliotecas e dependências necessárias para projetos. Com o NPM, desenvolvedores podem acessar um vasto repositório de pacotes prontos, automatizar tarefas e facilitar a gestão de versões. É integrado ao Node.js, sendo essencial para projetos modernos de desenvolvimento web.
