@@ -4,6 +4,7 @@ npm init: inicializa o npm no diretório, cria o arquivo package.json
 
 npm init -y: cria o arquivo package.json sem ter que responder as perguntas
 
+Perguntas:
 package name: (npm)
 version: (1.0.0) - versão do projeto
 description:
@@ -18,60 +19,84 @@ license: (ISC)
 
 PACKAGE.JSON
 
-package.json: é o arquivo que descreve o projeto(diretório)
+package.json - é o arquivo que descreve o projeto(diretório)
 
-.json: é um objeto no javaScript
+.json - é um objeto no javaScript
+
 
 CAMPO SCRIPTS
 
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  }
 
-npm run test(nomeScript): para executar o scripts
+
+npm run nomeScript - para executar o scripts
+ex.:
+npm run test - executa o script "test"
+npm start - executa o script "start"
 
 
 
 NPM INSTALL
 
-npm i ou install nomePacote: para instalar pacotes
+npm i ou install nomePacote - para instalar pacotes
 
-npm i ou install (sem passar nada): ele lê os dependencies do
+npm i ou install (sem passar nada) - ele lê os dependencies do
 package.json e instala eles caso ele não estejam no node_modules
 
 node_modules: onde fica os pacotes instalados do projeto
+
+npm install -g npm: Reinstalar npm
+
+
+PACOTES GLOBAIS
+o pacote é uma ferramenta CLI que vai ser usado frequentemente fora de projetos específicos. Ex.: SASS
+
+npm install -g nomePacote - instalar pacotes globalmente
+
+
+DEPENDÊNCIA DE DESENVOLVIMENTO
+são necessárias apenas durante o processo de desenvolvimento do projeto, e não para sua execução final em produção. Ex.: typescript, webpack
+
+npm install nomePacote --save-dev - instalar pacotes como dependências de desenvolvimento
+
+npm i nomePacote -D - forma abreviada
+
+
+
+NPM UPDATE
+
+npm update nomePacote - atualiza pacotes
+npm install -g npm@latest - atualiza o npm
+npm outdated - lista pacotes que estão desatualizados.
 
 
 
 NPM REMOVE
 
-npm remove nomePacote: para remover pacotes
-
-npm i ou install (sem passar nada): se estiver no node_modules e não no dependencies do
-arquivo package.json ele remove o pacote
-
-
-
-DEPENDENCIAS DE DESENVOLVIMENTO
-
-são pacotes que não vão pro site final
-
-npm i typescript(nomePacote) --save-dev
+npm remove nomePacote - para remover pacotes
 OU
-npm i typescript(nomePacote) -D
+npm uninstall nomePacote
+
+
+
+NPM LIST
+npm lis --depth=0 - lista pacotes instalados no projeto
+npm list -g --depth=0 - lista pacotes globais
 
 
 
 OUTROS COMANDOS
 
-Run as administrator: executar o npm como administrador
+Run as administrator - executar o npm como administrador
 
-npm cache clean --force: limpar Cache do npm
+npm cache clean --force - limpar Cache do npm
 
 npm -v - mostra a versão
 
-npm install -g npm: Reinstalar npm
+npm install react-icons --save - para instalar uma biblioteca de ícones
 
-npm install react-icons --save: para instalar uma biblioteca de ícones
-
-npm install -g sass: para instalar o SASS
+npm install -g sass - para instalar o SASS
