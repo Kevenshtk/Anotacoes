@@ -1,0 +1,35 @@
+API
+
+
+ÁREA DE TRANSFERÊNCIA DE DADOS
+
+Path Params
+é a passagem de parâmetros pelo path
+
+ex.: https://pokeapi.co/api/v2/pokemon/1 - trás as informações do Pokémon 1
+
+
+Query String
+começa após o ponto de ?
+
+ex.: https://pokeapi.co/api/v2/pokemon?type=grass&name=i - trás os Pokémons do typo grass e com i no nome
+
+
+
+HEADERS
+Response Headers - são as configurações de retorno do servidor
+
+Request Headers - são as configurações da requisição
+
+ex.: content-type: aplication/json - diz que vai ser enviado um json
+
+
+
+BODY
+dado que vai ser trafegado, o método GET e DELETE não faz sentido possuir body para requisições
+
+ex.: - método POST para adicionar um Pokémon
+Body{
+  "name": "Teste"
+}
+

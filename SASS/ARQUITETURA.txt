@@ -1,0 +1,39 @@
+SMACSS
+
+Base - regras básicas/globais de estilo
+ex.: elementos sem classe ou id, o reset da página.
+
+Layout - elementos que formam a estrutura geral do layout como cabeçalho, rodapé, barra lateral e colunas.
+
+ex.: header, main, sidebar, footer.
+
+Module - representa partes reutilizáveis e independentes da interface
+ex.: botões, modal, cards, carrosséis.
+
+
+State - Define estilos que representam estados específicos de um elemento, como ativo, inativo, visível ou oculto.
+
+
+Theme - possui estilos específicos para temas, como variações de cores ou estilos visuais
+ex.: tema escuro
+
+
+
+ARQUIVO PRINCIPAL
+
+nome - main.sass ou app.sass
+
+possui apenas importações
+
+
+ESTRUTURA DE PASTAS
+
+0-plugins - frameworks ou códigos de terceiros
+
+1-base - arquivos de estilo base
+
+2-layouts - arquivos para elementos que formam o layout da página
+
+3-modules - componentes das páginas
+
+OBS.: cada pasta possui um arquivo principal onde só haverá importações e sem a sintaxe de partials  

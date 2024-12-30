@@ -18,16 +18,3 @@ STRING
 Ex.:
 let frase = "Oi";
 console.log(frase.charAt(0)); //retorna "O"
-
-
-.include() - determina se um conjunto de caracteres pode ser encontrado dentro de outra string,
- retornando true ou false.
-Ex.:
-varString.includes(textoDigitado.toLowerCase())
-
-
-varString.toUpperCase() - deixa os caracteres em maiúsculo
-
-varString.toLowerCase() - deixa os caracteres em minúsculo
-
-.replace('.', ',') - troca o . por ,

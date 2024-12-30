@@ -1,14 +1,23 @@
-.PUSH() insere um elemento no array
+PUSH
+insere um elemento no array
 
 nomeArray.push("valor inserir")
 
 
 
-.SPLICE() remove elementos no array
+POP
+remove o último elemento do array e retorna o elemento removido
+
+nomeArray.pop()
+
+
+
+SPLICE
+remove elementos no array e retorna um novo array dos elementos removidos.
 
 nomeArray.splice(2(posição inicial),1(quant elementos))
 
-Ex.:
+ex.:
 const diasDaSemana = [
     "domingo", "segunda-feira", "terça-feira",
     "quarta-feira", "quinta-feira", "sexta-feira", "sábado"
@@ -22,11 +31,12 @@ diasDaSemana.splice(1,3);
 
 
 
-.FOREACH() é usada para percorrer um array e executar uma fução
+FOREACH
+é usada para percorrer um array e executar uma função
 
 nomeArray.forEach(nomeFunção);
 
-Ex.:
+ex.:
 const produtos = [
   { id: 1, nome: 'Açucar', estoque: 100, valor: 2.00 },
   { id: 2, nome: 'Álcool 70', estoque: 50, valor: 9.95 },
@@ -41,11 +51,12 @@ produtos.forEach(imprimirProduto);
 
 
 
-.MAP() é usado para percorrer o array e criar um novo
+MAP
+é usado para percorrer o array e criar um novo
 
 const novosArray = primeiroArray.map(nomeFunção);
 
-Ex.:
+ex.:
 const carros = [
   { marca: 'Fiat', modelo: 'Uno', anoFabricacao: 2015 },
   { marca: 'GM', modelo: 'Onix', anoFabricacao: 2018 },
@@ -73,11 +84,13 @@ console.log(novosCarros);
 
 
 
-.FILTER() é usada para filtar os elementos de um array e cria um novo array
+FILTER
+é usada para filtrar os elementos de um array e cria um novo array
 com os elementos filtrados
 
 const novosArray = primeiroArray.filter(nomeFunção);
 
+ex.:
 const carros = [
     { marca: 'Fiat', modelo: 'Uno', anoFabricacao: 2015 },
     { marca: 'GM', modelo: 'Onix', anoFabricacao: 2018 },
@@ -103,18 +116,21 @@ const carros = [
 
 
 
-.REDUCE()  reduz um array para um único valor
+REDUCE
+reduz um array para um único valor
+OBS.: se o valor inicial não for passado vai começar pelo primeiro elemento do array
 
-const nomeVar = array.reduce(nomeFunção, '' ou 0 para números);
+const nomeVar = array.reduce(nomeFunção, valorInicial);
 
+ex.:
 const itensCarrinho = [
-  { id: 1, nome: 'Açucar', qnt: 2, valor: 2.00 },
+  { id: 1, nome: 'Açúcar', qnt: 2, valor: 2.00 },
   { id: 2, nome: 'Álcool 70', qnt: 3, valor: 9.95 },
   { id: 3, nome: 'Luvas descartáveis', qnt: 50, valor: 2.50 },
   { id: 4, nome: 'Papel toalha', qnt: 1, valor: 2.00 },
 ];
 
-function somarValor (total, itemCarrinho) {
+function somarValor (total(acumulador), itemCarrinho(valorAtual)) {
   const valorTotal = itemCarrinho.qnt * itemCarrinho.valor;
 
   return total + valorTotal;
@@ -126,10 +142,23 @@ console.log(valorAPagar);
 
 
 
-.SORT() ordena o conteúdo de um array e retorna o mesmo ordenado
+JOIN
+nomeArray.join("") - unir todos os elementos de um array em uma única string
+OBS.: por padrão usa a "," para separar os itens
+
+ex.:
+const letras = ['H', 'e', 'l', 'l', 'o'];
+const resultado = letras.join("");
+console.log(resultado); // "Hello"
+
+
+
+SORT
+ordena o conteúdo de um array e retorna o mesmo ordenado
 quando o array é de strings ele ordena por ordem alfabética
 
-array.sort( / nomeFunção)
+nomeArray.sort(nomeFunção)
+
 
 FUNÇÃO PARA ORDENAR NÚMEROS
 function ordenaNumeros(a, b){

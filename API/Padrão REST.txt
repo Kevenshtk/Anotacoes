@@ -1,0 +1,95 @@
+Padrão REST
+
+CATEGORIAS:
+
+*Endpoints
+são as URLs das funções que o front-end precisa
+
+ex.: https://api.com.br/converte-milhas/?qtdMilhas=1&converterPara=metros
+
+
+partes do endpoint:
+
+https://api.com.br - nome do domínio
+converte-milhas - função
+?qtdMilhas=1&converterPara(parâmetros)=metros(valor) - parâmetros
+
+OBS.: 
+o (?) é necessário para passar parâmetros
+o (&) é necessário para passar separar os parâmetros
+
+
+manipular dados:
+
+https//api.com.br/ - dominio
+cliente/ - nome que representa a coleção de dados
+2 - valor a ser usado na coleção de dados
+
+
+
+*Verbos HTTP
+
+GET - obter dados
+
+POST - inserir dados
+
+PUT - atualiza todos os dados
+
+PATCH - atualiza apenas alguns dado
+
+DELETE - excluir dados
+
+
+
+*JSON
+é o formato usado para enviar e receber dados
+
+sintaxe:
+
+{
+  "chave" : valor,
+  "chave" : valor
+}
+
+ex.:
+
+{
+  "nome" : "Smartphone Samsung",
+  "preco" : 2500.00,
+  "imagem" : "novo-smartphone.jpg"
+}
+
+
+
+*Códigos de status
+indica o status da requisição
+
+100 a 199 - resposta de informação - solicitação em andamento
+200 a 299 - resposta de sucesso
+
+300 a 399 - redirecionamento - a solicitação foi recebida, mas precisa de mais alguma ação do lado do front-end
+
+400 a 499 - erro por parte do cliente - erro vindo do front-end
+500 a 599 - erro no servidor - erro no back-end
+
+
+status mais utilizados:
+200
+201 - recurso criado com sucesso - indica que um recurso foi criado no servidor 
+ex.: cadastro com sucesso
+
+400
+403 - indica que o front-end não tem autorização para acessar um endpoint específico
+ex.: quanto tenta acessar uma url que precisa de login para ser acessada
+
+404 - indica que a url não foi encontrada
+500
+
+
+
+POSTMAN
+usado para testar uma API
+
+para usar o POST é preciso marcar a opção raw, depois em text selecionar o JSON
+
+

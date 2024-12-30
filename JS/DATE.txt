@@ -50,18 +50,18 @@ const horas = minutos / 60;
 
 METODOS
 
-.getFullYear() retorna o ano
+.getFullYear() - retorna o ano
 
-.getMonth() retorna o mês, que vai de 0 à 11
+.getMonth() - retorna o mês, que vai de 0 à 11
 
-.getDate() retorna o dia do mês de 1 à 31
+.getDate( -) retorna o dia do mês de 1 à 31
 
-.getDay() retorna os dias da semanda de 0 à 6
+.getDay() - retorna os dias da semanda de 0 à 6
 
-.getHours() retorna a hora de 0 à 23
+.getHours() - retorna a hora de 0 à 23
 
-.getMinutes() retorna os minutos de 0 à 59
+.getMinutes() - retorna os minutos de 0 à 59
 
-.getSeconds() retorna os segundos de 0 à 59
+.getSeconds() - retorna os segundos de 0 à 59
 
-.getMilliseconds() retorna os milesegundos de 0 à 999
+.getMilliseconds() - retorna os milesegundos de 0 à 999

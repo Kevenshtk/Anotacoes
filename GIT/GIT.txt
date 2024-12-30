@@ -97,6 +97,7 @@ git commit --amend -m "descricaoCommit" - substitui o ultimo commit
 
 TAG
 git tag nomeTag(identificador) identificadorCommit(hash do commit) - cria um identificador para versões do software
+
 git tag nomeTag identificadorCommit -m "descrição" - cria a tag com uma descrição
 git tag -d nomeTag - remove a tag do commit
 git tag -n - mostra todas as tags e a descrição da tag
@@ -114,7 +115,10 @@ git log --grep="palavra" - filtra os commits por uma palavra chave
 
 CHECKOUT
 git checkout --(brach atual) nomeFile - restaura uma versão do file a partir do ultimo commit(o arquivo não pode estar na staged)
-git checkout identificador_do_commit(hash do commit) --(brach atual) nomeFile - recupera um file do commit 
+
+git checkout identificadorCommit(hash do commit) --(brach atual) nomeFile - recupera um file do commit
+
+git checkout identificadorCommit - volta o projeto para o commit específico
 
 git checkout -b nome_do_novo_branch - cria uma nova branch e já muda para ela
 git checkout nomeBranch - muda a branch para onde vai todas as mudanças
@@ -144,6 +148,7 @@ Comandos do GIT / GITHUB
 PUSH
 git push - envia todos os commits do repositório local para o repositório remoto
 git push -u origin(repositório remoto) minha-branch(local) - Além de enviar os commits, ele configura a branch local para rastrear automaticamente a branch remota.(quando a branch local ainda não tem uma branch remota correspondente.)
+
 git push origin :nomeBranch - remove uma branch remota
 git push origin nomeTag - envia a tag para o repositório
 git push origin --tags - envia todas as tags

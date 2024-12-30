@@ -4,6 +4,8 @@ IMPORT
 OBS.: é uma boas prática criar os arquivos secundários com _(anderlinha) antes do nome, na hora de importar não precisa inserir o _ nem a extensão .sass
 
 USE
+precisa estar no topo do arquivo
+
 @use 'nomeFile/localFile'- maneira moderna e recomendada de importar arquivos
 
 @use 'nomeFile/localFile' as nomeApelido - da um apelido para prefixo

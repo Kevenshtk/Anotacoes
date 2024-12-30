@@ -1,5 +1,6 @@
 COLEÇÃO DE OBJETOS
 
+ex.:
 var colecao_disciplinas = [
     { id: 1, nome: "Português",     carga_horaria: 240 }, // índice 0
     { id: 2, nome: "Matemática",    carga_horaria: 220 }, // índice 1

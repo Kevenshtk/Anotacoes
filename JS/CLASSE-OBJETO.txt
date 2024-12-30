@@ -23,13 +23,59 @@ produto.descrever(); - chama o método
 
 
 
+OBJECT DESTRUCTURING
+ex.:
+1) const pessoa = { nome: "keven"};
+
+const { nome } = pessoa; - é o mesmo disso -> const nome = pessoa.nome
+
+
+2) const { gets, print } = require('./funcoesAux'); import de funções
+
+print(gets());
 
 
 
+CLASSE E OBJTEO
+Usado quando vou ter mais de um objeto do mesmo tipo
+
+ex.:
+1) class Pessoa{
+    nome;
+    idade;
+    anoNascimento;
+
+    constructor(nome, idade){
+        this.nome = nome;
+        this.idade = idade;
+        this.anoNascimento = 2024 - idade
+    }
+
+    descrever(){
+        console.log(`Meu nome é ${this.nome}, minha idade é ${this.idade} e meu ano de nascimento é ${this.anoNascimento}`);
+    }
+}
+
+
+function compararPessoas(p1, p2){
+    if(p1.idade > p2.idade){
+        console.log(`O ${p1.nome} é mais velho que o ${p2.nome}`);
+    } else if(p1.idade < p2.idade){
+        console.log(`O ${p2.nome} é mais velho que o ${p1.nome}`);
+    } else {
+        console.log("Ambos possuem a mesma idade");
+    }
+}
+
+
+const keven = new Pessoa("keven", 21);
+const irineu = new Pessoa("irineu", 21);
+
+compararPessoas(keven, irineu);
 
 
 
-class formaDeBolo{
+2) class formaDeBolo{
 	constructor(saborDaMassa, saborRecheio){
 		this.saborDaMassa = saborDaMassa;
 		this.saborRecheio = saborRecheio;
