@@ -1,19 +1,53 @@
 FUNÇÃO
 
-var texto = "Hello World"; declarar a variavel
+var texto = "Hello World";
 
 function imprimir(nome da função) (texto(parametro)) {
     console.log(texto)
 }
 
-imprimir(texto) chama a função
+imprimir(texto) - chama a função
+
 
 
 ARROW FUNCTIONS
+usado em callbacks e funções como map, filter, ou eventos e para uma sintaxe mais curta
 
-const retorna_media = (nota_1, nota_2) =>{
+ex.:
+const retorna_media = (nota_1, nota_2) => {
     
     let media = (nota_1 + nota_2) / 2
     return media;
 
 }
+
+
+ARROW FUNCTIONS SIMPLIFICADO
+const newList = pokemons.map((pokemon) => convertPokemonToLi(pokemons));
+
+É o mesmo disso:
+
+const newList = pokemons.map((pokemon) => {
+     convertPokemonToLi(pokemons));
+}
+
+
+
+CALLBACK
+é uma função passada como argumento para outra função
+
+ex.:
+function saudacao(nome, callback) { // Função que aceita um callback
+  console.log(`Olá, ${nome}!`);
+  callback();
+}
+
+function dizerAdeus() { // Função de callback
+  console.log('Até logo!');
+}
+
+saudacao('Maria', dizerAdeus); // Chamando a função com o callback
+
+// Saída:
+// Olá, Maria!
+// Até logo!

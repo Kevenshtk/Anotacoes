@@ -1,0 +1,133 @@
+DOCUMENT
+é o objeto que se refere ao html
+
+
+SELETORES
+
+.getElementsByTagName('div') - seleciona algo por tag
+.getElementById('meuId')
+.getElementsByName('')
+.getElementsByClassName('minhaClasse')
+.querySelector('#msg' ou '.msg') - seleciona o primeiro elemento que corresponde ao seletor CSS
+.querySelectorAll('#msg' ou '.msg') - seleciona todos os elementos que correspondem ao seletor CSS
+
+
+
+MANIPULAÇÃO DE ELEMENTOS
+
+* Alterar conteúdo:
+  .innerHTML - define ou obtém o conteúdo HTML de um elemento
+  .innerText - obtém apenas o texto visível aos usuários na interface e é mais lento
+  .textContent - obtém todos os textos no DOM, ignorando estilos ou visibilidade e é mais rápido
+
+* Alterar atributos:
+  .setAttribute(attr('class'), value('novaClass')) - define um atributo no elemento
+  .getAttribute(attr('id')) - obtém o valor de um atributo do elemento
+  .removeAttribute(attr('class')) - remove um atributo do elemento
+
+* Alterar estilos:
+  .style.propertyCSS - modifica diretamente o estilo CSS de um elemento
+  
+  ex.:
+      element.style.color = 'blue';
+      element.style.backgroundColor = 'yellow';
+
+
+
+CRIANÇÃO E REMOÇÃO DE ELEMENTOS
+
+document.createElement(tagName) - Cria um novo elemento HTML
+
+elementFather.appendChild(newDiv) - adiciona um elemento filho ao final de um elemento pai
+ex.:
+const lista = document.getElementsByTagName('ol');
+const novoItemLista = document.createElement('li');
+lista.appendChild(novoItemLista);
+
+element.insertBefore(newElement, referenceElement) - insere um elemento antes de outro elemento existente
+
+element.removeChild(child) - Remove um elemento filho
+element.replaceChild(newChild, oldChild) - substitui um elemento filho por outro
+
+
+
+EVENTOS
+element.addEventListener(evento, callback) - quando ocorre o evento no elemento é executado o callback
+
+Eventos comuns:
+
+click (Clique)
+mouseover (Mouse sobre o elemento)
+mouseout (Mouse sai do elemento)
+keydown (Tecla pressionada)
+keyup (Tecla solta)
+
+ex.:
+element.addEventListener('click', function() {
+  console.log('Elemento clicado!');
+});
+
+
+TARGET
+é usado para acessar o valor atual de um elemento que disparou um evento
+
+event.target - se refere ao elemento HTML que disparou o evento
+
+ex.:
+<input type="text" id="inputField" oninput="enviar(event)" />
+
+<script>
+  function enviar(event) {
+    console.log(event.target.value); // Mostra o valor digitado
+  }
+</script>
+
+
+
+MANIPULAÇÃO DE CLASSES
+.classList
+  .add(className) - adiciona uma classe ao elemento
+  .remove(className) - remove uma classe do elemento
+  .toggle(className) - adiciona ou remove uma classe, dependendo se ela já está presente
+
+  .contains(className) - verifica se o elemento possui uma classe específica
+
+
+
+JANELAS
+alert('msg') mostra um alerta
+confirm('msg') mostra um alerta de confirma, retorna true ou false
+prompt('msg') trás um campo texto, retorna o texto digitado ou null se for cancelado
+
+
+
+ATRIBUTOS PARA CHAMAR FUNÇÕES PELO HTML
+
+onclick="nomeFuncao()" - quando clicar
+onmouseenter="nomeFuncao()" - quando o mouse entra
+onmouseout="nomeFuncao()" - quando o mouse sair
+onload"nomeFuncao()" - quando carregar o elemento html
+onChange() - aciona uma função quando digitar um caracter no input
+
+
+
+varImg.src = 'local' insere imagens pelo js(com tag img no HTML)
+
+
+
+
+
+
+
+var.focus() faz o cursor do campo voltar a piscar
+
+
+Converter váriaveis
+
+Number.parseInt(n)interio
+Number.parseFloat(n)real
+Number(n.value)o JS que idetifica real ou interio
+
+String(n)
+n.toString()
+`msg ${n}` template string(S  funciona com crase)
